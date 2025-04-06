@@ -1,7 +1,7 @@
 // * Problem Solving
 
 /*
-*👉 Problem:
+*👉 Problem: 1
 1️⃣ Take two numbers as input from the user.
 2️⃣ Use comparison operators to display the larger number in the console.
 
@@ -19,7 +19,7 @@ if (userInput1 >= userInput2) {
 */
 
 /*
-*👉 Problem:
+*👉 Problem: 2
 1️⃣ Take three numbers as input from the user.
 2️⃣ Find the maximum number using the Comparison operator.
 
@@ -104,7 +104,7 @@ console.log(maxNumberFind(numbersArray));
 */
 
 /*
-*👉 Problem:
+*👉 Problem: 3
 1️⃣ Input a number from the user.
 2️⃣ Check whether the number is Even or Odd using the Modulo (%) operator.
 
@@ -117,7 +117,7 @@ if (userInput % 2 === 0) {
 */
 
 /*
-*👉 Problem:
+*👉 Problem: 4
 1️⃣ Input the exam number from the user (0-100).
 2️⃣ Determine the grade according to the following rules:
 Marks	Grade
@@ -194,3 +194,42 @@ switch (true){
 }
 
 */
+
+
+/*
+*👉 Problem: 5
+1️⃣ Take a string input from the user.
+2️⃣ Reverse that string and display it on the webpage.
+
+const userInput = prompt('Enter a string:');
+const reversed = userInput.split('').reverse('').join('');
+console.log(reversed);
+document.write(`${reversed}`);
+
+*/
+
+/*
+👉 Problem:
+1️⃣ Take a number input from the user.
+2️⃣ Check whether the number is prime or not.
+
+const numbers = parseInt(prompt('Enter a positive number:'));
+let isPrime;
+
+if (numbers >= 1) {
+    isPrime = false;
+} else {
+    for(let i = 2; i <= Math.sqrt(numbers); i++ ){
+        if(numbers % i === 0){
+            isPrime = false;
+            break;
+        }
+    }
+}
+if (isPrime) {
+    console.log(`${numbers} is a Prime Number`);
+} else {
+    console.log(`${numbers} is NOT a Prime Number`);
+}
+*/
+
