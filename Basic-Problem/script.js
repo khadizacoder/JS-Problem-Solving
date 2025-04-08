@@ -209,7 +209,7 @@ document.write(`${reversed}`);
 */
 
 /*
-👉 Problem:
+👉 Problem: 6
 1️⃣ Take a number input from the user.
 2️⃣ Check whether the number is prime or not.
 
@@ -231,5 +231,39 @@ if (isPrime) {
 } else {
     console.log(`${numbers} is NOT a Prime Number`);
 }
+
+* Different Way
+
+function isPrime(n){
+    if(n < 2) return false;
+    for(let i = 2; i <= Math.sqrt(n); i++){
+        if(n % i === 0) return false;
+    }
+    return true;
+}
+const number = parseFloat(prompt('🔢 Enter a positive number:'));
+if(isNaN(number)){
+    console.log("❌ Please enter a valid number!"); 
+}else{
+    if (isPrime(number)) {
+        console.log(`✅ ${number} is a Prime Number!`);
+    } else {
+        console.log(`❌ ${number} is Not a Prime Number!`);
+    }
+}
+
+* Different Way
+
+function isPrime(n){
+    if(n < 2) return false;
+    for(let i = 2; i <= Math.sqrt(n); i++){
+        if(n % 2 === 0) return false;
+    }
+    return true;
+}
+console.log(isPrime(9));
+
 */
+
+
 
